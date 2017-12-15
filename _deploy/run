@@ -1,0 +1,8 @@
+#!/bin/sh
+set -x
+# Absolute path to this script
+SCRIPT=$(readlink -f "$0")
+
+cd $(dirname ${SCRIPT})/..
+npm install
+exec npm start
