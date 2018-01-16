@@ -4,5 +4,6 @@ set -e
 SCRIPT=$(readlink -f "$0")
 
 cd $(dirname ${SCRIPT})/..
-npm install
-exec node node_modules/browser-sync/bin/browser-sync.js  start --server . --port 3005 --files 'assets/*.css,**/*.js,**/*.html' --no-open
+exit 1
+#npm install
+#exec node node_modules/browser-sync/bin/browser-sync.js  start --server . --port 3005 --files 'assets/*.css,**/*.js,**/*.html' --no-open
